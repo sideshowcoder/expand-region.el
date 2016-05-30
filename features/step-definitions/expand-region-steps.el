@@ -9,7 +9,7 @@
 
 (When "^I quit$"
       (lambda ()
-        (cl-flet ((signal (&rest args) nil))
+        (flet ((signal (&rest args) nil))
           (keyboard-quit))))
 
 (When "^I expand the region \\([0-9]+\\) times$"
